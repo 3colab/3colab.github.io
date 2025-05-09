@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3COLAB UDEC</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <style>
     :root {
       --primary-color: #b9dcc8;
@@ -20,16 +21,31 @@
       color: var(--text-color);
     }
 
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: var(--primary-color);
+    .swiper-container {
+      width: 100%;
+      height: 300px;
     }
 
-    header img {
-      max-width: 200px;
-      height: auto;
-      border-radius: 12px;
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--primary-color);
     }
 
     nav {
@@ -106,6 +122,18 @@
 </head>
 <body>
 
+  <!-- Carousel -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://i.ibb.co/hFTs6jmx/Whats-App-Image-2025-03-23-at-14-24-36-ea76020d.jpg" alt="Slide 1"></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/1200x300?text=Investigación" alt="Slide 2"></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/1200x300?text=Colaboración" alt="Slide 3"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
   <header>
     <img src="https://i.ibb.co/hFTs6jmx/Whats-App-Image-2025-03-23-at-14-24-36-ea76020d.jpg" alt="3COLAB logo">
     <h1>3COLAB UDEC</h1>
@@ -135,12 +163,12 @@
       <h2>Colaboradores</h2>
       <div class="person-grid">
         <div class="person-card">
-          <img src="https://via.placeholder.com/100" alt="Foto de Juan Pérez">
+          <img src="https://via.placeholder.com/100" alt="Foto">
           <h3>Dr. Juan Munizaga</h3>
           <p>EULA, Universidad de Concepción</p>
         </div>
         <div class="person-card">
-          <img src="https://via.placeholder.com/100" alt="Foto de Ana García">
+          <img src="https://via.placeholder.com/100" alt="Foto">
           <h3>Dr. Eduardo Fuentes-Lillo</h3>
           <p>Laboratorio de Invasiones Biológicas UDEC, Instituto de Ecología y Biodiversidad</p>
         </div>
@@ -152,17 +180,17 @@
     <h2>Estudiantes de Postgrado</h2>
         <div class="person-grid">
         <div class="person-card">
-          <img src="https://via.placeholder.com/100" alt="Foto de Nicolás Santos Domínguez">
+          <img src="https://via.placeholder.com/100" alt="Foto">
           <h3>Camila Vargas Estay</h3>
           <p>Doctorado en Estudios Territoriales en el Sur Global (DETSUR)</p>
         </div>
           <div class="person-card">
-          <img src="https://via.placeholder.com/100" alt="Foto de Nicolás Santos Domínguez">
+          <img src="https://via.placeholder.com/100" alt="Foto">
           <h3>Diego Arias</h3>
           <p>Magíster en Análisis Geográfico</p>
         </div>
           <div class="person-card">
-          <img src="https://via.placeholder.com/100" alt="Foto de Nicolás Santos Domínguez">
+          <img src="https://via.placeholder.com/100" alt="Foto">
           <h3>Javiera Godoy</h3>
           <p>Magíster en Análisis Geográfico</p>
         </div>
