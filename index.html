@@ -1,37 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3COLAB UDEC</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-<style>
-       
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #b9dcc8;
-            font-family: 'Poppins', sans-serif;
-            text-align: center;
-        }
-        .content {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        img {
-            max-width: 80%;
-            height: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3COLAB UDEC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #b9dcc8;
+      --text-color: #333;
+      --card-bg: #ffffff;
+      --highlight: #5aab8e;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--primary-color);
+      color: var(--text-color);
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: var(--primary-color);
+    }
+
+    header img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    nav {
+      background-color: var(--highlight);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #478e76;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--highlight);
+      padding-bottom: 0.5rem;
+      color: #2a4e42;
+    }
+
+    .person-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .person-card {
+      background-color: var(--card-bg);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .person-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: var(--highlight);
+      color: white;
+    }
+
+    .instagram-section {
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="content">Sitio web próximamente</div>
-<img src="https://i.ibb.co/hFTs6jmx/Whats-App-Image-2025-03-23-at-14-24-36-ea76020d.jpg">
-Correo: monicaortiz [@] udec . cl
+
+  <header>
+    <img src="https://i.ibb.co/hFTs6jmx/Whats-App-Image-2025-03-23-at-14-24-36-ea76020d.jpg" alt="3COLAB logo">
+    <h1>3COLAB UDEC</h1>
+    <p>Laboratorio de Conservación, Colaboración, y Coproducción</p>
+    <p>Universidad de Concepción, Chile</p></p>
+  </header>
+
+  <nav>
+    <a href="#pi">IP</a>
+    <a href="#collaborators">Colaboradores</a>
+    <a href="#students">Estudiantes</a>
+    <a href="#activities">Actividades</a>
+  </nav>
+
+  <main>
+    <section id="pi">
+      <h2>Investigadora Principal</h2>
+      <div class="person-card">
+        <img src="https://via.placeholder.com/100" alt="Foto de Mónica Ortiz">
+        <h3>Dra. Mónica Ortiz</h3>
+        <p>Email: monicaortiz [@] udec.cl</p>
+        <p>Intereses: cambio climático, biodiversidad, políticas medioambientales, paisajes multifuncionales</p>
+      </div>
+    </section>
+
+    <section id="collaborators">
+      <h2>Colaboradores</h2>
+      <div class="person-grid">
+        <div class="person-card">
+          <img src="https://via.placeholder.com/100" alt="Foto de Juan Pérez">
+          <h3>Dr. Juan Munizaga</h3>
+          <p>EULA, Universidad de Concepción</p>
+        </div>
+        <div class="person-card">
+          <img src="https://via.placeholder.com/100" alt="Foto de Ana García">
+          <h3>Dr. Eduardo Fuentes-Lillo</h3>
+          <p>Laboratorio de Invasiones Biológicas UDEC, Instituto de Ecología y Biodiversidad</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="students">
+      <h2>Estudiantes</h2>
+      <div class="person-grid">
+        <div class="person-card">
+          <img src="https://via.placeholder.com/100" alt="Foto de Camila Rojas">
+          <h3>Camila Vargas</h3>
+          <p>Doctorado en Estudios Territoriales en el Sur Global</p>
+        </div>
+        <div class="person-card">
+          <img src="https://via.placeholder.com/100" alt="Foto de Luis Soto">
+          <h3>Diego Arias</h3>
+          <p>Magíster en Análisis Geográfico</p>
+        </div>
+        <div class="person-card">
+          <img src="https://via.placeholder.com/100" alt="Foto de Luis Soto">
+          <h3>Javiera Godoy</h3>
+          <p>Magíster en Análisis Geográfico</p>
+        </div>
+        <div class="person-card">
+          <img src="https://via.placeholder.com/100" alt="Foto de Valentina Torres">
+          <h3>Valentina Torres</h3>
+          <p>Pregrado</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="activities">
+      <h2>Actividades</h2>
+      <ul>
+        <li><strong>Seminario:</strong> Modelos Cognitivos - 12 de junio, 2025</li>
+        <li><strong>Workshop:</strong> Procesamiento del lenguaje - agosto, 2025</li>
+        <li><strong>Congreso:</strong> Ciencias Cognitivas - septiembre, 2025</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 3COLAB UDEC. 
+  </footer>
+
 </body>
 </html>
