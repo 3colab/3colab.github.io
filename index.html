@@ -120,28 +120,32 @@
     }
 
 
-      .grid-container {
+     .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1rem;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
   }
 
-  .grid-container img {
+  .grid-item img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 12px;
     object-fit: cover;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
   }
 
-  .grid-container img:hover {
+  .grid-item img:hover {
     transform: scale(1.02);
   }
+
   </style>
 </head>
+
+
+ 
 <body>
 
   <!-- Carousel 
@@ -168,16 +172,18 @@
   
   <p>Apoyo de UDEC VRIM UCO2495 Laboratorio de Aprendizaje Vivencial</p>
   </header>
-  
-<section id="photo-grid" style="padding: 2rem 1rem; background-color: #f5f5f5;">
+
+  <section id="photo-grid" style="padding: 2rem 1rem; background-color: #f5f5f5;">
+  <h2 style="text-align: center; margin-bottom: 1rem; color: #2a4e42;">Nuestro Trabajo en Imágenes</h2>
   <div class="grid-container">
-<img src="https://i.ibb.co/60VZywy2/a.jpg"></div>
-<img src="https://i.ibb.co/S7rkb1VY/d.jpg"></div>
-<img src="https://i.ibb.co/Nd6X06dx/s.jpg"></div>
-<img src="https://i.ibb.co/kV1kp3FM/v.jpg"></div>
-<img src="https://i.ibb.co/cKtNFQPL/y.jpg"></div>
+    
+<div class="grid-item"><img src="https://i.ibb.co/60VZywy2/a.jpg"></div>
+<div class="grid-item"><img src="https://i.ibb.co/S7rkb1VY/d.jpg"></div>
+<div class="grid-item"><img src="https://i.ibb.co/Nd6X06dx/s.jpg"></div>
+<div class="grid-item"><img src="https://i.ibb.co/kV1kp3FM/v.jpg"></div>
   </div>
 </section>
+
   <nav>
     <a href="#pi">IP</a>
     <a href="#collaborators">Colaboradores</a>
